@@ -1,0 +1,5 @@
+@import 'res/style/util.scss';
+
+body, #root, .App{
+    @include marginAndPaddingZero;
+}

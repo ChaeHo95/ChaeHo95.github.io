@@ -1,0 +1,14 @@
+/** 마진, 패딩 0 선언 변수*/
+@mixin marginAndPaddingZero(){
+  margin: 0;
+  padding: 0;
+}
+
+// 가로 세로 중앙 설정
+@mixin itemTheMiddle(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

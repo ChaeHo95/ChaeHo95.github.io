@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {BrowserView, MobileView} from 'react-device-detect';
+import {BrowserRouter} from "react-router-dom";
+import Browser from "./browser/Browser";
+import Mobile from "./mobile/Mobile";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+    return (
+        <div className="App">
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
+                {/** 브라우저 */}
+                <BrowserView>
+                    <Browser/>
+                </BrowserView>
+
+                {/** 모바일 */}
+                <MobileView>
+                    <Mobile/>
+                </MobileView>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

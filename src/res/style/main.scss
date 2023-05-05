@@ -1,0 +1,17 @@
+@import './util.scss';
+
+/** PC */
+@media (hover: hover) and (pointer: fine) {
+  #main{
+
+  }
+}
+
+
+
+/** MOBILE */
+@media (hover: none) and (pointer: coarse) {
+  #main{
+    @include itemTheMiddle;
+  }
+}
