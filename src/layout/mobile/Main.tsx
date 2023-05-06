@@ -13,7 +13,7 @@ const Main = () => {
     }, 1000)
     return (
         <div id={"main"}>
-            <video className={"mobile__background"} muted={true} autoPlay={true} loop={true}>
+            <video className={"mobile__background"} muted={true} autoPlay={true} loop={true} playsInline={true} >
                 <source src={require("../../res/mp4/mobile_background.mp4")} type="video/mp4"/>
             </video>
             <div className={"mobile__description"}>
