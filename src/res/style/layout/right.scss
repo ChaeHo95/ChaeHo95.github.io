@@ -1,1 +1,25 @@
 @import "src/res/style/utils";
+#right{
+  @include itemTheMiddle;
+}
+
+@include mobile{
+  #right{
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@include tablet{
+  #right{
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@include desktop{
+  #right{
+    width: 50%;
+    height: 100%;
+  }
+}

@@ -1,1 +1,39 @@
 @import "src/res/style/utils";
+
+#main {
+  @include sizeHundred;
+  background: #121B26;
+  #container {
+    width: 100%;
+    @include calcHeight(100px);
+    @include itemTheMiddle;
+  }
+}
+
+@include mobile {
+  #main {
+    background: bisque;
+    #container{
+      flex-direction: column;
+    }
+
+  }
+}
+
+@include tablet {
+  #main {
+    background: black;
+    #container{
+      flex-direction: column;
+    }
+  }
+}
+
+@include desktop {
+  #main {
+    #container{
+      flex-direction: row;
+    }
+  }
+}
+
