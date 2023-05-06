@@ -1,0 +1,12 @@
+/* 마진 패딩 0*/
+@mixin marginPaddingZero(){
+  padding: 0;
+  margin: 0;
+}
+
+/* 정중앙*/
+@mixin itemTheMiddle(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
