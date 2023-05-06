@@ -7,8 +7,7 @@ body{
     @include marginPaddingZero;
 }
 #root, .App{
-    width: 100%;
-    height: 100%;
+    @include sizeHundred;
     @include marginPaddingZero;
 
 }

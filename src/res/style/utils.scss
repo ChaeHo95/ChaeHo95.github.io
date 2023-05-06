@@ -1,3 +1,29 @@
+/*반응형 화면 크기*/
+$mobile: 767px;
+$tablet: 1023px;
+$desktop: 1024px;
+
+@mixin mobile{
+  @media (max-width: $mobile){
+    min-width: 320px;
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+@mixin tablet{
+  @media (min-width: $mobile+1) and (max-width: $tablet){
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+@mixin desktop{
+  @media (min-width: $desktop){
+    @content;
+  }
+}
+
 /* 마진 패딩 0*/
 @mixin marginPaddingZero(){
   padding: 0;
@@ -9,4 +35,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@mixin sizeHundred(){
+  width: 100%;
+  height: 100%;
+}
+/* calc height*/
+@mixin calcHeight($value){
+  height: calc(100% - $value);
+}
+
+/* calc width*/
+@mixin calcWidth($value){
+  width: calc(100% - $value);
 }
