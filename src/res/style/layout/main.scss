@@ -8,14 +8,27 @@
 /* Mobile */
 @media (hover: none) and (pointer: coarse) {
   #main {
+    position: relative;
     width: 100%;
     height: 100%;
-    @include itemTheMiddle;
+    overflow: hidden;
+    .mobile__background {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
 
     .mobile__description {
+      width: 100%;
+      position: fixed;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%,-50%);
       font-size: 16px;
       font-weight: 700;
       text-align: center;
+      color: #FFFFFF;
     }
   }
 }
