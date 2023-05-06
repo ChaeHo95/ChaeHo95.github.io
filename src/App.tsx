@@ -11,17 +11,21 @@ const App = () => {
         <div className="App">
             <BrowserRouter basename={process.env.PUBLIC_URL}>
                 {/** 브라우저 */}
-                <BrowserView>
+                <BrowserView style={styles.container}>
                     <Browser/>
                 </BrowserView>
 
                 {/** 모바일 */}
-                <MobileView>
+                <MobileView style={styles.container}>
                     <Mobile/>
                 </MobileView>
             </BrowserRouter>
         </div>
     );
+}
+
+const styles = {
+    container: {width: "100vw", height: "100vh"}
 }
 
 export default App;
