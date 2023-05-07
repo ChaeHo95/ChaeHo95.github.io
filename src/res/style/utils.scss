@@ -3,6 +3,11 @@ $mobile: 767px;
 $tablet: 1023px;
 $desktop: 1024px;
 
+$background: #000000;
+$color: #FFFFFF;
+
+
+
 @mixin mobile{
   @media (max-width: $mobile){
     @content;
@@ -37,8 +42,8 @@ $desktop: 1024px;
 }
 /* 사이즈 100% */
 @mixin sizeHundred(){
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 /* calc height*/
 @mixin calcHeight($value){
