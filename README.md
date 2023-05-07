@@ -9,4 +9,6 @@
 # 목적
 - Typescript ,scss ,React 공부
 
+# Todo
+- 목적에 따른 페이지 작성
 
