@@ -1,38 +1,25 @@
 @import "src/res/style/utils";
 
 #main {
-  @include sizeHundred;
+  @include monitorSize;
   min-width: 320px;
-  #container {
-    width: 100%;
-    @include calcHeight(80px);
-    @include itemTheMiddle;
-    overflow: scroll;
-  }
 }
 
 @include mobile {
   #main {
-    #container{
-      flex-direction: column;
-    }
 
   }
 }
 
 @include tablet {
   #main {
-    #container{
-      flex-direction: column;
-    }
+
   }
 }
 
 @include desktop {
   #main {
-    #container{
-      flex-direction: row;
-    }
+
   }
 }
 

@@ -9,7 +9,7 @@ body{
     @include marginPaddingZero;
 }
 #root, .App{
-    @include sizeHundred;
+    @include monitorSize;
     @include marginPaddingZero;
 
 }

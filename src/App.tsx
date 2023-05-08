@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.scss';
 import {BrowserRouter} from "react-router-dom";
-import {BrowserMain} from "./layout/browser";
+import {Main} from "./layout";
 
 const App = () => {
 
     return (
         <div className="App">
             <BrowserRouter basename={process.env.PUBLIC_URL}>
-                <BrowserMain/>
+                <Main/>
             </BrowserRouter>
         </div>
     );

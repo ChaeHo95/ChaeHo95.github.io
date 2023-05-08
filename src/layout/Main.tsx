@@ -1,5 +1,5 @@
-import "../../res/style/layout/main.scss"
-import {Header, Right,Left} from "./index";
+import "../res/style/layout/main.scss"
+import {Header, PagesRouter} from "./index";
 import React, {useEffect, useState} from "react";
 
 const Main = () => {
@@ -22,8 +22,7 @@ const Main = () => {
         <div id={"main"} style={mainStyles}>
             <Header pageMode={pageMode} takePageMode={takePageMode}/>
             <div id={"container"}>
-                <Left/>
-                <Right/>
+                <PagesRouter/>
             </div>
         </div>
     )

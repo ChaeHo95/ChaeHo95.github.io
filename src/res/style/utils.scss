@@ -40,6 +40,11 @@ $color: #FFFFFF;
   justify-content: center;
   align-items: center;
 }
+/* 모니터 사이즈 */
+@mixin monitorSize(){
+  width: 100vw;
+  height: 100vh;
+}
 /* 사이즈 100% */
 @mixin sizeHundred(){
   width: 100vw;

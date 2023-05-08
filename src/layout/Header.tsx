@@ -1,4 +1,4 @@
-import "../../res/style/layout/header.scss"
+import "../res/style/layout/header.scss"
 import {useEffect, useState} from "react";
 
 interface headerType {
@@ -32,7 +32,7 @@ const Header = ({pageMode, takePageMode}: headerType) => {
                 </div>
             </div>
             <div className={"header__mode-btn"}>
-                <img src={require("../../res/img/"+btnType)}
+                <img src={require("../res/img/"+btnType)}
                      onClick={() => {
                          modeChange();
                      }}/>
