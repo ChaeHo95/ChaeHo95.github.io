@@ -3,6 +3,7 @@
 #main {
   @include monitorSize;
   min-width: 320px;
+  min-height: 600px;
 }
 
 @include mobile {
