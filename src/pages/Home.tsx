@@ -1,6 +1,12 @@
 import "../res/style/pages/home.scss"
+import {useNavigate} from "react-router-dom";
 
 const Home = () =>{
+
+    const nav = useNavigate();
+    const pageMove = (pageName: any) => {
+        nav(pageName);
+    }
     return(
         <div id={"home"}>
             <div className={"home__left"}>
@@ -15,13 +21,15 @@ const Home = () =>{
                         CHAEHO CHOE
                     </div>
                     <div className={"home__right-description"}>
-                        <div>
+                        <div onClick={() => {
+                            pageMove("/portfolio")
+                        }}>
                             DEVELOPER PORTFOLIO
                             <span className={"page_move"}>⇦</span>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>현
         </div>
 
     )
